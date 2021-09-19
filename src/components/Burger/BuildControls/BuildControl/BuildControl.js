@@ -1,6 +1,5 @@
 import React from 'react'
 import classes from './BuildControl.module.css'
-import Button from "@material-ui/core/Button";
 
 function buildControl(props) {
     return (

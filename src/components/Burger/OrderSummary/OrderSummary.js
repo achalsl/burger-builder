@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../../UI/Button/Button'
-function orderSummary(props) {
+
+function OrderSummary(props) {
     const ingredientSummary = Object.keys(props.ingredients)
         .map(igKey => {
             return (
@@ -19,6 +20,7 @@ function orderSummary(props) {
             </ul>
             <p><strong>Total price: $ {props.price.toFixed(2)}</strong></p>
             <p>Continue to checkout?</p>
+
             <Button
                 btnType='Danger'
                 clicked={props.purchaseCancelled}
@@ -31,4 +33,4 @@ function orderSummary(props) {
     )
 }
 
-export default orderSummary;
+export default OrderSummary;
